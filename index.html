@@ -21,10 +21,18 @@
                 <div class="header__nav-wrapper">
                     <nav>
                         <ul class="nav__list">
-                            <li class="nav__item-list"><a class="nav__item-list-link" href="#">Menu</a></li>
-                            <li class="nav__item-list"><a class="nav__item-list-link" href="#">Recipies</a></li>
-                            <li class="nav__item-list"><a class="nav__item-list-link" href="#">Chefs</a></li>
-                            <li class="nav__item-list"><a class="nav__item-list-link" href="#">Contacts</a></li>
+                            <li class="nav__item-list">
+                                <a class="nav__item-list-link" href="#">Menu</a>
+                            </li>
+                            <li class="nav__item-list">
+                                <a class="nav__item-list-link" href="#">Recipies</a>
+                            </li>
+                            <li class="nav__item-list">
+                                <a class="nav__item-list-link" href="#">Chefs</a>
+                            </li>
+                            <li class="nav__item-list">
+                                <a class="nav__item-list-link" href="#">Contacts</a>
+                            </li>
                         </ul>
                     </nav>
                 </div>
@@ -40,21 +48,21 @@
                     </div>
                 </div>
                 <div class="header__data-about-company">
-                    <div class="data-about-company__content">
-                        <div class="time">
+                    <div class="header__content">
+                        <div class="header__time">
                             <img src="icons\header\ic_watch_later.svg" alt="clock">
-                            <p class="time__value-point">Today 10:00 am - 7:00 pm</p>
-                            <p class="time__description">Working hours</p>
+                            <p class="header__value-point">Today 10:00 am - 7:00 pm</p>
+                            <p class="header__description">Working hours</p>
                         </div>
-                        <div class="place">
+                        <div class="header__location">
                             <img src="icons\header\ic_near_me.svg" alt="navigator">
-                            <p class="place__value-point">Velyka Vasylkivska 100</p>
-                            <p class="place__description">Get Directions</p>
+                            <p class="header__value-point">Velyka Vasylkivska 100</p>
+                            <p class="header__description">Get Directions</p>
                         </div>
-                        <div class="number">
+                        <div class="header__number">
                             <img src="icons\header\ic_call.svg" alt="phone">
-                            <p class="number__value-point">+38 (063)833 24 15</p>
-                            <p class="number__description">Call Online</p>
+                            <p class="header__value-point">+38 (063)833 24 15</p>
+                            <p class="header__description">Call Online</p>
                         </div>
                     </div>
                 </div>
@@ -91,10 +99,10 @@
                 </div>
                 <div class="carousel__control">
                     <div class="control__right">
-                        <img src="" alt="">
+                        <button class="control__button-right"></button>
                     </div>
                     <div class="control__left">
-                        <img src="" alt="">
+                        <button class="control__button-left"></button>
                     </div>
                 </div>
             </div>
@@ -104,22 +112,22 @@
                 <h2 class="work__title-section title-section">How It Works</h2>
             </div>
             <div class="work__cards">
-                <div class="cards__wrapper">
-                    <div class="card__pick-meals">
-                        <h3 class="pick-meals__title-card"></h3>
-                        <p class="pick-meals__description__card"></p>
+                <div class="works__wrapper">
+                    <div class="works__pick-meals">
+                        <h3 class="works__title-card">Pick meals</h3>
+                        <p class="works__description__card">Choose your meals from our diverse weekly menu. Find gluten or dairy free, low carb & veggie options.</p>
                     </div>
-                    <div class="card__choose">
-                        <h3 class="choose__title-card"></h3>
-                        <p class="choose__description__card"></p>
+                    <div class="works__choose">
+                        <h3 class="works__title-card">Choose how often</h3>
+                        <p class="works__description__card">Our team of chefs do the prep work - no more chopping, measuring, or sink full of dishes!</p>
                     </div>
-                    <div class="card__fast-deliveries">
-                        <h3 class="fast-deliveries__title-card"></h3>
-                        <p class="fast-deliveries__description__card"></p>
+                    <div class="works__fast-deliveries">
+                        <h3 class="works__title-card">Fast deliveries</h3>
+                        <p class="works__description__card">Your freshly prepped 15-min dinner kits arrive on your doorstep in a refrigerated box.</p>
                     </div>
-                    <div class="card__tasty-meals">
-                        <h3 class="tasty-meals__title-card"></h3>
-                        <p class="tasty-meals__description__card"></p>
+                    <div class="works__tasty-meals">
+                        <h3 class="works__title-card">Tasty meals</h3>
+                        <p class="works__description__card">Gobble makes cooking fast, so you have more time to unwind and be with family.</p>
                     </div>
                 </div>
             </div>
@@ -128,27 +136,29 @@
             <div class="header">
                 <h1 class="dishes__title-section title-section">Dish Of The Day</h1>
             </div>
-            <div class="dishes__cards"> <!-- grid -->
-                <div class="dishes__featured-meal">
-                    <div class="dishes__header">
-                        <img src="img\card-product\image-1.png" alt="Featured Meal">
-                        <div class="dishes__share">
-                            <img src="icons\dishes\ic_share.svg" alt="share">
+            <div class="dishes__cards">
+                <div class="dishes__card-wrapper">
+                    <div class="dishes__featured-meal">
+                        <div class="dishes__header">
+                            <img src="img\card-product\image-1.png" alt="Featured Meal">
+                            <div class="dishes__share">
+                                <img src="icons\dishes\ic_share.svg" alt="share">
+                            </div>
                         </div>
-                    </div>
-                    <div class="dishes__main">
-                        <div class="dishes__main-data">
-                            <h3 class="dishes__title">Featured Meal</h3>
-                            <p class="dishes__composition">Served with french fries + drink</p>
+                        <div class="dishes__main">
+                            <div class="dishes__main-data">
+                                <h3 class="dishes__title">Featured Meal</h3>
+                                <p class="dishes__composition">Served with french fries + drink</p>
+                            </div>
+                            <p class="dishes__description">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
                         </div>
-                        <p class="dishes__description">Choice of: Coke, Fanta, Sprite, Upgrade to large fries, Add whopper patty, Add Tender crisp patty and more...</p>
-                    </div>
-                    <div class="dishes__footer">
-                        <div class="dishes__grade">
-                            <div class="dishes__stars"></div>
-                            <p class="dishes__count">12</p>
+                        <div class="dishes__header">
+                            <div class="dishes__grade">
+                                <div class="dishes__stars"></div>
+                                <p class="dishes__count">12</p>
+                            </div>
+                            <button class="dishes__order">Order</button>
                         </div>
-                        <button class="dishes__order">Order</button>
                     </div>
                 </div>
             </div>
@@ -213,17 +223,18 @@
                         </div>
                         <div class="recipes-card__main-section-card">
                             <p class="recipes-card__date">05 Jul 2016</p>
-                            <p class="recipes-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <p class="recipes-card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit
+                            </p>
                             <p class="recipes-card__author">Jason Keller</p>
                         </div>
-                        <div class="recipes-card__footer-card">
+                        <div class="recipes-card__header-card">
                             <div class="recipes-card__views">
                                 <img src="" alt="">
                                 <p class="views__count"></p>
                             </div>
                             <div class="recipes-card__comments">
                                 <img src="" alt="">
-                                <p class="__count"></p>
+                                <p class="recipes-card__count"></p>
                             </div>
                         </div>
                     </div>
@@ -276,7 +287,7 @@
                         <p class="social-card__date-public">24 Jun at 16:20 pm</p>
                         <p class="social-card__text-article">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut Lorem ipsum dolor sit amet, consectetur adipiscing</p>
                     </div>
-                    <div class="social-card__footer">
+                    <div class="social-card__header">
                         <p class="social-card__author">@DennisFerguson</p>
                     </div>
                 </div>
@@ -316,6 +327,34 @@
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer__top">
+            <div class="footer__data-about-company">
+                <div class="footer__content">
+                    <div class="footer__time">
+                        <img src="icons\footer\ic_watch_later.svg" alt="clock">
+                        <p class="footer__value-point">Today 10:00 am - 7:00 pm</p>
+                        <p class="footer__description">Working hours</p>
+                    </div>
+                    <div class="footer__location">
+                        <img src="icons\footer\ic_near_me.svg" alt="navigator">
+                        <p class="footer__value-point">Velyka Vasylkivska 100</p>
+                        <p class="footer__description">Get Directions</p>
+                    </div>
+                    <div class="footer__number">
+                        <img src="icons\footer\ic_call.svg" alt="phone">
+                        <p class="footer__value-point">+38 (063)833 24 15</p>
+                        <p class="footer__description">Call Online</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <img src="icons\header\Logo.svg" alt="logo">
+            <img src="icons\header\ic_company-name.svg" alt="healthy switcher">
+            <p class="footer__copyright">© Designed by Yellow Snow. All Rights Reserved.</p>
+        </div>
+    </footer>
 </body>
 
 </html>
