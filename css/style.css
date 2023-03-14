@@ -1,1 +1,16 @@
-/*# sourceMappingURL=style.css.map */
+@font-face {
+  font-family: "Helvetica Roman";
+  src: url(/fonts/HelveticaNeueCyr-Roman.ttf);
+}
+@font-face {
+  font-family: "Helvetica Black-Condensed";
+  src: url(/fonts/HelveticaNeueBlackCondensed.ttf);
+}
+@font-face {
+  font-family: "Helvetica Bold-Condensed";
+  src: url(/fonts/HelveticaNeueBoldCondensed.ttf);
+}
+html {
+  font-family: "Helvetica Roman", "Times New Roman", Times, serif;
+  background-color: #fff;
+}/*# sourceMappingURL=style.css.map */
