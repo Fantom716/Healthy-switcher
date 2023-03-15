@@ -1,18 +1,21 @@
 @font-face
-    font-family: "Helvetica Roman"
+    font-family: "Helvetica"
     src: url(/fonts/HelveticaNeueCyr-Roman.ttf)
+    font-weight: 400
 
 @font-face
-    font-family: "Helvetica Black-Condensed"
-    src: url(/fonts/HelveticaNeueBlackCondensed.ttf)
+    font-family: "Helvetica"
+    src: url(../fonts/HelveticaNeueBlackCondensed.ttf)
+    font-weight: 900
+@font-face
+    font-family: "Helvetica"
+    src: url(../fonts/HelveticaNeueBoldCondensed.ttf)
+    font-weight: 600
 
 @font-face
-    font-family: "Helvetica Bold-Condensed"
-    src: url(/fonts/HelveticaNeueBoldCondensed.ttf)
-
-@font-face
-    font-family: 'Helvetica Light'
+    font-family: 'Helvetica'
     src: url(/fonts/HelveticaNeueCyr-Light.ttf)
+    font-weight: 300
 
 
 /* wrapper 1110px */
@@ -22,23 +25,20 @@ $accent: #34C759
 $description: rgba(255, 255, 255, 0.5)
 $main-text: #fff
 $back-title: #303030
-$roman: 'Helvetica Roman'
-$bold: 'Helvetica Bold-Condensed'
-$black: 'Helvetica Black-Condensed'
-$light: 'Helvetica Light'
+
 $margin-title: 50px
 
 @mixin before
     position: absolute
     font-size: 6.25rem
-    font-family: $black
+    font-weight: 900
     letter-spacing: 1rem
     color: $back-title
     z-index: -1
 
 
 html
-    font-family: 'Helvetica Roman', 'Courier New', Courier, monospace
+    font-family: 'Helvetica', 'Courier New', Courier, monospace
     box-sizing: border-box
 
 .divisor-menu
@@ -65,7 +65,7 @@ header
 .main-button_green
     background-color: $accent
     border: 0px
-    font-family: $black
+    font-weight: 900
     letter-spacing: .2rem
     border-radius: 90px
 
@@ -78,25 +78,26 @@ header
     &__nav-list
         display: flex
     &__item-list-link
-        font-family: $bold
+        font-weight: 900
         color: $accent
         text-decoration: none
     &__item-list:not(:last-child)
         margin-right: 45px
     &__tagline
-        font-family: $light
+        font-weight: 300
         font-size: 4.5rem
         letter-spacing: 0.5rem
         line-height: 5.25rem
         margin-bottom: 0px
     &__tagline-bold
-        font-family: $bold
+        font-family: 'Helvetica'
+        font-weight: 900
     &__subtitle
         line-height: 1.6rem
         color: $description
         margin-bottom: 40px
     &__order
-        font-family: $bold
+        font-weight: 900
         letter-spacing: 0.2rem
         display: block
         margin: 0 auto

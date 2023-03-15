@@ -1,22 +1,26 @@
 @font-face {
-  font-family: "Helvetica Roman";
+  font-family: "Helvetica";
   src: url(/fonts/HelveticaNeueCyr-Roman.ttf);
+  font-weight: 400;
 }
 @font-face {
-  font-family: "Helvetica Black-Condensed";
-  src: url(/fonts/HelveticaNeueBlackCondensed.ttf);
+  font-family: "Helvetica";
+  src: url(../fonts/HelveticaNeueBlackCondensed.ttf);
+  font-weight: 900;
 }
 @font-face {
-  font-family: "Helvetica Bold-Condensed";
-  src: url(/fonts/HelveticaNeueBoldCondensed.ttf);
+  font-family: "Helvetica";
+  src: url(../fonts/HelveticaNeueBoldCondensed.ttf);
+  font-weight: 600;
 }
 @font-face {
-  font-family: "Helvetica Light";
+  font-family: "Helvetica";
   src: url(/fonts/HelveticaNeueCyr-Light.ttf);
+  font-weight: 300;
 }
 /* wrapper 1110px */
 html {
-  font-family: "Helvetica Roman", "Courier New", Courier, monospace;
+  font-family: "Helvetica", "Courier New", Courier, monospace;
   box-sizing: border-box;
 }
 
@@ -49,7 +53,7 @@ header {
 .main-button_green {
   background-color: #34C759;
   border: 0px;
-  font-family: "Helvetica Black-Condensed";
+  font-weight: 900;
   letter-spacing: 0.2rem;
   border-radius: 90px;
 }
@@ -64,7 +68,7 @@ header {
   display: flex;
 }
 .header__item-list-link {
-  font-family: "Helvetica Bold-Condensed";
+  font-weight: 900;
   color: #34C759;
   text-decoration: none;
 }
@@ -72,14 +76,15 @@ header {
   margin-right: 45px;
 }
 .header__tagline {
-  font-family: "Helvetica Light";
+  font-weight: 300;
   font-size: 4.5rem;
   letter-spacing: 0.5rem;
   line-height: 5.25rem;
   margin-bottom: 0px;
 }
 .header__tagline-bold {
-  font-family: "Helvetica Bold-Condensed";
+  font-family: "Helvetica";
+  font-weight: 900;
 }
 .header__subtitle {
   line-height: 1.6rem;
@@ -87,7 +92,7 @@ header {
   margin-bottom: 40px;
 }
 .header__order {
-  font-family: "Helvetica Bold-Condensed";
+  font-weight: 900;
   letter-spacing: 0.2rem;
   display: block;
   margin: 0 auto;
@@ -179,7 +184,7 @@ header {
   content: "ABOUT";
   position: absolute;
   font-size: 6.25rem;
-  font-family: "Helvetica Black-Condensed";
+  font-weight: 900;
   letter-spacing: 1rem;
   color: #303030;
   z-index: -1;
@@ -211,7 +216,7 @@ header {
   content: "WORK";
   position: absolute;
   font-size: 6.25rem;
-  font-family: "Helvetica Black-Condensed";
+  font-weight: 900;
   letter-spacing: 1rem;
   color: #303030;
   z-index: -1;
@@ -257,7 +262,7 @@ header {
   left: 357px;
   position: absolute;
   font-size: 6.25rem;
-  font-family: "Helvetica Black-Condensed";
+  font-weight: 900;
   letter-spacing: 1rem;
   color: #303030;
   z-index: -1;
@@ -332,7 +337,7 @@ header {
   left: 387px;
   position: absolute;
   font-size: 6.25rem;
-  font-family: "Helvetica Black-Condensed";
+  font-weight: 900;
   letter-spacing: 1rem;
   color: #303030;
   z-index: -1;
