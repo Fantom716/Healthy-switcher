@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "Helvetica Roman";
   src: url(/fonts/HelveticaNeueCyr-Roman.ttf);
@@ -10,7 +11,179 @@
   font-family: "Helvetica Bold-Condensed";
   src: url(/fonts/HelveticaNeueBoldCondensed.ttf);
 }
+@font-face {
+  font-family: "Helvetica Light";
+  src: url(/fonts/HelveticaNeueCyr-Light.ttf);
+}
+/* wrapper 1110px */
 html {
-  font-family: "Helvetica Roman", "Times New Roman", Times, serif;
-  background-color: #fff;
+  font-family: "Helvetica Roman", "Courier New", Courier, monospace;
+  box-sizing: border-box;
+}
+
+hr {
+  margin-bottom: 80px;
+}
+
+.wrapper {
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #1A1A1A;
+}
+
+header {
+  background-image: url(/img/header/background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.title, .subtitle {
+  text-align: center;
+  color: #fff;
+}
+
+.main-button_green {
+  background-color: #34C759;
+  border: 0px;
+  padding: 25px 58px;
+  border-radius: 90px;
+}
+
+.header__top {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 33px;
+  padding-bottom: 33px;
+}
+.header__nav-list {
+  display: flex;
+}
+.header__item-list-link {
+  font-family: "Helvetica Bold-Condensed";
+  color: #34C759;
+  text-decoration: none;
+}
+.header__item-list:not(:last-child) {
+  margin-right: 45px;
+}
+.header__tagline {
+  font-family: "Helvetica Light";
+  font-size: 4.5rem;
+  letter-spacing: 0.5rem;
+  line-height: 5.25rem;
+  margin-bottom: 0px;
+}
+.header__tagline-bold {
+  font-family: "Helvetica Bold-Condensed";
+}
+.header__subtitle {
+  line-height: 1.6rem;
+  color: #BABABA;
+  margin-bottom: 40px;
+}
+.header__order {
+  font-family: "Helvetica Bold-Condensed";
+  letter-spacing: 0.2rem;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+.header__bottom-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.header__data-about-company {
+  padding-bottom: 100px;
+}
+
+.about-company {
+  text-align: center;
+  color: #fff;
+}
+.about-company__wrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+.about-company__data-about-company {
+  padding-bottom: 100px;
+}
+.about-company__value-point {
+  margin-bottom: 10px;
+}
+.about-company__image-bout-company {
+  margin-bottom: 16px;
+}
+.about-company__description {
+  color: #8E8E8E;
+}
+.about-company__image-about-company {
+  margin-bottom: 16px;
+}
+
+/*header sections*/
+.title-section {
+  padding: 64px 100px 65px 90px;
+  color: #fff;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 3.75rem;
+  letter-spacing: 0.5rem;
+  position: relative;
+  z-index: 1;
+}
+
+.description-section {
+  color: #A6A6A6;
+  text-align: center;
+  line-height: 1.8rem;
+}
+
+/* carousel */
+.carousel-item {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.control__button {
+  width: 60px;
+  height: 60px;
+  border: 1px solid #303030;
+  background-color: transparent;
+  margin: 10px;
+  border-radius: 90px;
+}
+
+/* about */
+.about {
+  background-color: #252525;
+  padding: 64px 98px 65px 90px;
+  /* Вынести в JS */
+}
+.about__title-section::before {
+  content: "ABOUT";
+  position: absolute;
+  left: 300px;
+  font-size: 6.25rem;
+  font-family: "Helvetica Black-Condensed";
+  letter-spacing: 1rem;
+  color: #303030;
+  z-index: -1;
+}
+.about__carousel-items {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  align-items: center;
+}
+.about__description-section {
+  margin-bottom: 90px;
+}
+.about__carousel-item-2, .about__carousel-item-3 {
+  display: none;
 }/*# sourceMappingURL=style.css.map */
