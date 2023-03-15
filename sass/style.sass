@@ -55,6 +55,8 @@ header
     background-image: url(/img/header/background.png)
     background-repeat: no-repeat
     background-size: cover
+    height: 100vh
+    margin-bottom: 336px
 
 .title, .subtitle
     text-align: center
@@ -148,10 +150,10 @@ header
 
 .carousel-item
     display: flex
-    gap: 50px
+    gap: 34px
     justify-content: center
 
-.control__button
+.button__transparent_dark-grey
     width: 60px
     height: 60px
     border: 1px solid $back-title
@@ -162,9 +164,11 @@ header
 /* about */
 
 .about
+    margin: 0px auto
+    position: relative
     background-color: $dark-grey
     padding: 64px 98px 65px 90px
-    margin-bottom: 90px
+    border-radius: 20px
     &__title-section
         margin-bottom: 61px
     &__title-section::before
@@ -282,3 +286,5 @@ header
         content: 'CHEFS'
         left: 387px
         @include before
+    &__card
+        display: flex
