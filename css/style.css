@@ -145,6 +145,7 @@ header {
   letter-spacing: 0.5rem;
   position: relative;
   z-index: 1;
+  margin-bottom: 50px;
 }
 
 .description-section {
@@ -209,9 +210,6 @@ header {
   margin-bottom: 50px;
 }
 
-.work__title-section {
-  margin-bottom: 50px;
-}
 .work__title-section::before {
   content: "WORK";
   position: absolute;
@@ -253,9 +251,6 @@ header {
 .dishes {
   margin-bottom: 120px;
   color: #fff;
-}
-.dishes__title-section {
-  margin-bottom: 50px;
 }
 .dishes__title-section::before {
   content: "DISHES";
@@ -329,8 +324,9 @@ header {
   align-items: center;
 }
 
-.chefs__title-section {
-  margin-bottom: 50px;
+.chefs {
+  color: #fff;
+  margin-bottom: 120px;
 }
 .chefs__title-section::before {
   content: "CHEFS";
@@ -342,6 +338,40 @@ header {
   color: #303030;
   z-index: -1;
 }
+.chefs__info {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
 .chefs__card {
   display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.chefs__example-photos {
+  display: flex;
+  gap: 24px;
+}
+.chefs__name {
+  margin-bottom: 6px;
+  font-size: 1.1rem;
+}
+.chefs__about {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+}
+.chefs__works {
+  display: flex;
+  gap: 30px;
+}
+
+.recipes__title-section::before {
+  content: "RECIPES";
+  position: absolute;
+  font-size: 6.25rem;
+  font-weight: 900;
+  letter-spacing: 1rem;
+  color: #303030;
+  z-index: -1;
+  left: 330px;
 }/*# sourceMappingURL=style.css.map */

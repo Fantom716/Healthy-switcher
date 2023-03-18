@@ -36,7 +36,6 @@ $margin-title: 50px
     color: $back-title
     z-index: -1
 
-
 html
     font-family: 'Helvetica', 'Courier New', Courier, monospace
     box-sizing: border-box
@@ -140,6 +139,7 @@ header
     letter-spacing: 0.5rem
     position: relative
     z-index: 1
+    margin-bottom: $margin-title
 
 .description-section
     color: #A6A6A6
@@ -192,8 +192,6 @@ header
     margin-bottom: $margin-title
 
 .work
-    &__title-section
-        margin-bottom: $margin-title
     &__title-section::before
         content: 'WORK'
         @include before
@@ -224,8 +222,6 @@ header
 .dishes
     margin-bottom: 120px
     color: $main-text
-    &__title-section
-        margin-bottom: $margin-title
     &__title-section::before
         content: 'DISHES'
         left: 357px
@@ -281,11 +277,35 @@ header
         align-items: center
 
 .chefs
-    &__title-section
-        margin-bottom: $margin-title
+    color: #fff
+    margin-bottom: 120px
     &__title-section::before
         content: 'CHEFS'
         left: 387px
         @include before
+    &__info
+        display: flex
+        gap: 24px
+        align-items: center
     &__card
         display: flex
+        flex-direction: column
+        gap: 24px
+    &__example-photos
+        display: flex
+        gap: 24px
+    &__name
+        margin-bottom: 6px
+        font-size: 1.1rem
+    &__about
+        font-size: 0.75rem
+        color: $description
+    &__works
+        display: flex
+        gap: 30px
+
+.recipes
+    &__title-section::before
+        content: 'RECIPES'
+        @include before
+        left: 330px
